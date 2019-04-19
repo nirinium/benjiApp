@@ -1,4 +1,4 @@
-import csv, time, requests, os, numpy.random, random
+import csv, time, requests, os, numpy.random, random, math
 from datetime import datetime
 import pathlib as pLib
 import pandas as pd
@@ -6,7 +6,7 @@ import PIL
 from PIL import Image, ImageDraw, ImageFont
 
 #CONFIG
-randomIntz = numpy.random.randint(4, size=10)
+randomIntz = str(random.randrange(1, 100000)) #numpy.random.randint(4, size=10)
 
 r = requests.get("https://finance.yahoo.com/quote/%5EDJI/components/")
 stocks = pd.read_html("https://finance.yahoo.com/quote/%5EDJI/components/", header=0, parse_dates=["Symbol"])
