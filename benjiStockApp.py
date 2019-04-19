@@ -21,7 +21,7 @@ def drawTicker():
     im = Image.new('RGBA', (800, 800), 'white')
     draw = ImageDraw.Draw(im)
     draw.text((25, 25), str(stocks), fill = 'black', font=fnt)
-    draw.text((5, 400), 'fuck', fill = 'black', font=fnt, anchor="center")
+    draw.text((0, 5), 'CSV Export of Ticker', fill = 'black', font=fnt, anchor="center")
     im.save(tickerFile)
 
 drawTicker()
