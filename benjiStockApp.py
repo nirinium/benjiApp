@@ -17,10 +17,10 @@ tickerFile = 'ticker_' + str(randomIntz) + '.png'
 
 def drawTicker():
 
-    fnt = ImageFont.truetype("consola.ttf", 12)
+    fnt = ImageFont.truetype("resources/consola.ttf", 12)
     im = Image.new('RGBA', (800, 800), 'white')
     draw = ImageDraw.Draw(im)
-    draw.text((25, 25), str(stocks), fill = 'black', font=fnt)
+    draw.text((25, 25), (str(stocks)), fill = 'black', font=fnt)
     draw.text((5, 5), 'CSV export of ticker using PIL Library', fill = 'black', font=fnt, anchor="center")
     im.save(tickerFile)
 
