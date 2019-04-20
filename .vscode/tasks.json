@@ -4,9 +4,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "1414",
+            "label": "Run tests",
             "type": "shell",
-            "command": "./delete.bat"
+            "command": "./scripts/delete.sh",
+            "windows": {
+                "command": ".\\scripts\\delete.bat"
+            },
         }
     ]
 }

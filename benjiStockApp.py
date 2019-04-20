@@ -4,10 +4,7 @@ import pathlib as pLib
 import pandas as pd
 import PIL
 from PIL import Image, ImageDraw, ImageFont
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 import numpy as np
-#import plotTicker
 
 #CONFIG
 randomIntz = str(random.randrange(1, 100000)) #numpy.random.randint(4, size=10)
