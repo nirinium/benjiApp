@@ -1,4 +1,4 @@
-import csv, time, requests, os, numpy.random, random
+import csv, time, requests, os
 from datetime import datetime
 import pathlib as pLib
 import pandas as pd

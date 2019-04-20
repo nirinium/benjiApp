@@ -65,7 +65,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "externalTerminal",
-            "preLaunchTask": "1414"
+            //"preLaunchTask": "1414"
         }
     ]
 }
