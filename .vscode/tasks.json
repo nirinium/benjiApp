@@ -6,7 +6,7 @@
         {
             "label": "Run tests",
             "type": "shell",
-            "command": "scripts/delete.sh",
+            "command": "sudo ./scripts/delete.sh",
             "windows": {
                 "command": ".\\scripts\\delete.bat"
             },
